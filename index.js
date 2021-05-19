@@ -6,7 +6,7 @@ const server = express();
 
 server.use(express.json());
 
-const port = 3000;
+const port = process.env.PORT || 3000;
 console.log('YO');
 server.get("/JeradXander", function (req, res) {
     res.send('<img style="width: 100vh; height: 100wh;"src="https://media.giphy.com/media/l0HU3WCEmWWmpdoIg/giphy.gif" alt="Kane"  width="250" />');
